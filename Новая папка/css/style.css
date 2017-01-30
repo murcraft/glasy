@@ -1,0 +1,102 @@
+html,
+body {
+	
+	background:#849d8f url("../img/background-image1.jpg") no-repeat 50% 0;
+	width: 1200px;
+
+}
+
+.container {
+	width: 1200px;/*1146px*/
+	margin: 0 auto;
+	padding: 0 27px;
+}
+
+.clearfix::after {
+	display: table;
+	content: "";
+	clear: both;
+}
+
+.main-header{
+	margin-bottom: 525px;
+	
+}
+
+.logo-header{
+	width: 158px;
+	float: left;
+}
+
+.main-nav {
+	float: left;
+	min-width: 680px;
+	
+}
+
+.main-nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	
+}
+
+.main-nav li {
+	display: inline-block;
+}
+
+.main-nav a {
+	display: block;
+	
+}
+
+.user-block {
+	float: right;
+	margin-top: 23px;
+}
+
+.offers {
+	margin-bottom: 35px;
+}
+
+.offers-content {
+	float: left;
+	width: 560px;
+}
+
+.hits {
+	margin-bottom: 35px;
+}
+
+.hits-item li{
+	display: inline-block;
+	width: 267px;
+}
+
+.features {
+	margin-bottom: 35px;
+}
+
+.features-item {
+	float: left;
+	width: 560px;
+}
+
+.about {
+	margin-bottom: 35px;
+}
+
+.about-blog {
+	float: left;
+	width: 560px;
+}
+
+.distribution {
+	float: left;
+	width: 560px;
+}
+
+.contacts-content {
+	float: right;
+	width: 304px;
+}

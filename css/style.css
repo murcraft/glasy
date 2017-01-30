@@ -1,0 +1,181 @@
+html,
+body {
+	
+	background:#849d8f url("../img/background-image1.jpg") no-repeat 50% 0;
+	width: 1200px;
+
+}
+
+.container {
+	width: 1146px;
+	margin: 0 auto;
+	padding: 0 27px;
+}
+
+.clearfix::after {
+	display: table;
+	content: "";
+	clear: both;
+}
+
+.main-header{
+	margin-bottom: 530px;
+	
+}
+
+.logo-header{
+	width: 154px;
+	float: left;
+    margin-top: 10px;
+
+}
+
+.main-nav {
+	float: left;
+	min-width: 616px;
+    margin-left: 23px;
+    margin-top: 24px;
+}
+
+.main-nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+    font-size: 0;
+}
+
+.main-nav li {
+	display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 22px;
+    vertical-align: top;
+}
+
+.main-nav a {
+	display: block;
+    padding: 5px 14px;
+    text-decoration-color: #ffffff;
+    color: #ffffff;
+}
+
+.main-nav a:hover {
+    background: #f7f6f2;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 16px;
+}
+
+.user-block {
+	float: right;
+	margin-top: 24px;
+}
+
+.user-block a {
+
+}
+
+.user-block .contacts {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    text-align: right;
+}
+
+.user-block .contacts-phone {
+    font-size: 22px;
+
+}
+
+.offers {
+	margin-bottom: 35px;
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 18px;
+    line-height: 24px;
+
+}
+/*офферы лучше переделать одним классом, чтобы было удобно размещать сразу все элементы и не дублировать на 2 */
+.offers-left {
+	float: left;
+	width: 530px;
+    padding: 15px;
+    margin-right: 26px;
+    background: #fecbe0 url("../img/offers-image1.jpg") no-repeat;
+    border-radius: 15px;
+}
+
+.offers-right {
+    float: left;
+    width: 530px;
+    padding: 15px;
+    background: #3c241a url("../img/offers-image2.jpg") no-repeat;
+    border-radius: 15px;
+}
+
+.offers h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 35px;
+    text-align: left;
+}
+
+.hits {
+	margin-bottom: 40px;
+}
+
+.hits-item {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.hits-item li{
+	display: inline-block;
+	width: 267px;
+    /*background: #cff6e1;*/
+    margin-right: 26px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.hits-item li:last-child {
+    margin-right: 0;
+
+}
+
+.features {
+	margin-bottom: 40px;
+    background: #ffffff url("../img/background-features.jpg") repeat;
+    border-radius: 15px;
+}
+
+.features-item {
+	float: left;
+	width: 552px;
+    margin-right: 13px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.about {
+	margin-bottom: 35px;
+}
+
+.about-blog {
+	float: left;
+	width: 560px;
+}
+
+.distribution {
+	float: left;
+	width: 560px;
+}
+
+.contacts-content {
+	float: right;
+	width: 304px;
+}
