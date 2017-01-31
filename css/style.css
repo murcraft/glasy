@@ -150,16 +150,73 @@ body {
 	margin-bottom: 40px;
     background: #ffffff url("../img/background-features.jpg") repeat;
     border-radius: 15px;
+    padding: 25px 18px;
+
 }
 
 .features-item {
+    position: relative;
 	float: left;
-	width: 552px;
+   	width: 483px;
     margin-right: 13px;
     font-size: 16px;
     line-height: 22px;
     color: #000000;
+
+
 }
+
+.features-item p {
+    margin: 0;
+    margin-top: 12px;
+    margin-left: 56px;
+    padding-top: 15px;
+}
+
+/*.features-item p::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: "";
+    width: 49px;
+    height: 149px;
+    background: #000000;
+    background: url("../img/spritesheet.png") no-repeat 0 0;*/
+}
+/* спрайты  */
+
+.features-item .icon {
+    position: absolute;
+    top: 12px;
+    left: 2px;
+    content: "";
+    width: 49px;
+    height: 49px;
+    background: #000000;
+    /*background: url("../img/spritesheet.png") no-repeat 0 0;*/
+}
+
+.features-item .icon1 {
+
+    background-position: 10px 10px;
+}
+
+.features-item .icon2 {
+
+    background-position: 65px 142px;
+}
+
+.features-item .icon3 {
+
+    background-position: 20px 20px;
+}
+
+.features-item .icon {
+
+    background-position: 100px 42px;
+}
+
+
 
 .about {
 	margin-bottom: 35px;
@@ -167,15 +224,95 @@ body {
 
 .about-blog {
 	float: left;
-	width: 560px;
+    margin-right: 26px;
+	width: 520px;
+    min-height: 174px;
+    color: #5a5a5a;
+    background: #ffffff url("../img/background-about.jpg") no-repeat 50%;
+    border-radius: 15px;
+    padding: 25px 20px
+
+}
+
+.about-blog a {
+    display: inline-block;
+    color: #000000;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-top: 8px;
+    text-decoration: none;
 }
 
 .distribution {
 	float: left;
-	width: 560px;
+    width: 560px;
+
+    background: #f8f7f4 url("../img/pattern.jpg") no-repeat;
+    border-radius: 15px;
+}
+
+.distribution-content {
+    min-height: 150px;
+    padding: 30px 20px;
+    background: #f8f7f4;
+    font-size: 16px;
+    line-height: 22px;
+    color: #5a5a5a;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.distribution-content p{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 37px;
 }
 
 .contacts-content {
-	float: right;
-	width: 304px;
+	position: relative;
+    margin-bottom: 20px;
+}
+
+.contacts-form {
+    position: absolute;
+    width: 253px;
+    right: 27px;
+    top: 66px;
+    background: #ffffff;
+    font-size: 14px;
+    line-height: 20px;
+    color: #343434;
+    padding: 30px 25px;
+    border-radius: 15px;
+}
+
+.contacts-form p {
+    padding: 0;
+    margin: 0;
+    color: #000000;
+    font-weight: bolder;
+    font-size: 18px;
+    line-height: 24px;
+    padding-right: 20px;
+}
+
+.social-footer {
+    float: left;
+    width: 267px;
+    margin-right: 26px;
+
+}
+
+.about-footer {
+    width: 560px;
+    float: left;
+    margin-right: 26px;
+
+}
+
+.footer-copyright {
+    float: right;
+    width: 267px;
+
 }
