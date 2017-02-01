@@ -1,15 +1,15 @@
-html,
+
 body {
-	
 	background:#849d8f url("../img/background-image1.jpg") no-repeat 50% 0;
 	width: 1200px;
+    margin: 0 auto;
 
 }
 
 .container {
 	width: 1146px;
 	margin: 0 auto;
-	padding: 0 27px;
+    padding: 0 27px;
 }
 
 .clearfix::after {
@@ -35,18 +35,20 @@ body {
 	min-width: 616px;
     margin-left: 23px;
     margin-top: 24px;
+
 }
 
-.main-nav ul {
+.main-menu {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-    font-size: 0;
 }
 
-.main-nav li {
+.main-menu > li {
 	display: inline-block;
+    position: relative;
     font-size: 16px;
+    color: #ffffff;
     font-weight: bold;
     line-height: 22px;
     vertical-align: top;
@@ -59,11 +61,90 @@ body {
     color: #ffffff;
 }
 
-.main-nav a:hover {
+.main-menu > li > a:hover {
     background: #f7f6f2;
     color: #000000;
     text-decoration: none;
     border-radius: 16px;
+}
+
+.main-nav .sub-menu {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 145px;
+    bottom: -187px;
+    left: -2px;
+    color: #000000;
+    padding-top: 6px;
+
+
+}
+
+.main-nav .sub-menu {
+    display: none;
+}
+
+.main-menu > li:hover .sub-menu {
+    display: block;
+}
+
+.main-nav .sub-menu li:first-child {
+    border-radius: 6px 6px 0 0;
+}
+
+.main-nav .sub-menu li:last-child {
+    border-radius: 0 0 6px 6px;
+}
+
+.main-nav .sub-menu li {
+    margin: 0;
+    color: #000000;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 400;
+    background: #ffffff;
+}
+
+
+.main-nav .sub-menu a {
+    margin: 0 7px;
+    padding: 9px 14px;
+    padding-right: 0;
+    color: #000000;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.main-nav .sub-menu li:first-child a {
+    border-bottom: 1px solid #343434;
+    font-weight: bold;
+}
+
+
+.main-menu .sub-menu  li:hover {
+    background: #fbded7;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 0;
+}
+
+.main-nav .sub-menu li:first-child:hover {
+    border-radius: 6px 6px 0 0;
+}
+
+.main-nav .sub-menu li:last-child:hover {
+    border-radius: 0 0 6px 6px;
+}
+
+.main-menu .sub-menu  li:active {
+    background: #f6b5a5;
+}
+
+.main-menu .sub-menu .active {
+    background: #f6b5a5;
 }
 
 .user-block {
@@ -157,63 +238,58 @@ body {
 .features-item {
     position: relative;
 	float: left;
-   	width: 483px;
-    margin-right: 13px;
+   	width: 486px; /*width: 483px; margin-right: 13px;*/
+	margin-top: 12px;
     font-size: 16px;
     line-height: 22px;
     color: #000000;
-
-
+	padding-left: 56px;
+	padding-top: 15px;
+	margin-right: 26px;
 }
 
-.features-item p {
+.features .icon2,
+.features .icon4 {
+	margin-right: 0;
+}
+
+/*.features-item p {
     margin: 0;
-    margin-top: 12px;
+    
     margin-left: 56px;
     padding-top: 15px;
-}
+}*/
 
-/*.features-item p::before {
+.features-item::before {
     position: absolute;
+	display: block;
     top: 0px;
     left: 0px;
     content: "";
     width: 49px;
-    height: 149px;
-    background: #000000;
-    background: url("../img/spritesheet.png") no-repeat 0 0;*/
-}
+    height: 49px;
+    background: url("../img/spritesheet.png") left;
+	background-repeat: no-repeat;
+	background-position: -197px -110px;
+	}
+
 /* спрайты  */
 
-.features-item .icon {
-    position: absolute;
-    top: 12px;
-    left: 2px;
-    content: "";
-    width: 49px;
-    height: 49px;
-    background: #000000;
-    /*background: url("../img/spritesheet.png") no-repeat 0 0;*/
+.icon1::before {
+    background-position: -145px -20px;
+	
 }
 
-.features-item .icon1 {
-
-    background-position: 10px 10px;
+.icon2::before {
+    background-position: -20px -110px;
 }
 
-.features-item .icon2 {
-
-    background-position: 65px 142px;
+.icon3::before {
+    background-position: -109px -110px;
 }
 
-.features-item .icon3 {
-
-    background-position: 20px 20px;
-}
-
-.features-item .icon {
-
-    background-position: 100px 42px;
+.icon4::before {
+    background-position: -197px -110px;
 }
 
 
@@ -301,18 +377,126 @@ body {
     float: left;
     width: 267px;
     margin-right: 26px;
+	margin-top: 15px;
+    margin-bottom: 25px;
+	text-align: center;
+}
 
+.social-btn {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	margin: 0 12px;
+	background: #c2cec7 url("../img/spritesheet.png") no-repeat center;
+	font-size: 0;
+	vertical-align: top;
+	text-decoration: none;
+	border: 3px solid #c2cec7;
+	border-radius: 18px;
+	
+}
+
+.social-btn-tw {
+	background-position: -235px -20px;
+}
+
+.social-btn-ins {
+	background-position: -213px -198px;
+}
+
+.social-btn-fb {
+	background-position: -141px -198px;
+}
+
+.social-btn-vk {
+	background-position: -284px -92px;
 }
 
 .about-footer {
     width: 560px;
     float: left;
     margin-right: 26px;
-
 }
+
+.about-footer ul {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+	margin-top: 16px;
+}
+
+.about-footer .footer-menu-left {
+	font-size: 13px;
+	margin-left: 107px;
+	
+}
+
+.about-footer .footer-menu-right {
+	font-size: 13px;
+	width: 183px;
+	
+}
+
+.about-footer ul a {
+	display: block;
+	color: #ffffff;
+	font-size: 13px;
+	line-height: 18px;
+	padding-top: 3px;
+	padding-left: 22px;
+}
+
+
+
+.footer-menu-left li:first-child a {
+	position: relative;
+}
+
+.footer-menu-left li:first-child a::before {
+	content: "";
+	position: absolute;
+    display: block;
+	top: 4px;
+	left: 0px;
+	width: 15px;
+	height: 15px;
+	background-color: #ffffff;
+    background: url("../img/spritesheet.png") center;
+    background-repeat: no-repeat;
+    background-position: -20px -18px;
+}
+/*url{"../img/spritesheet.png") */
+
+
+
 
 .footer-copyright {
     float: right;
     width: 267px;
+	
 
+}
+/* можно переделать под позицтонирование  */
+.footer-copyright > a {
+	display: block;
+	margin-bottom: 9px;
+	margin-left: 79px;
+}
+
+.footer-copyright p {
+	margin:0;
+	padding: 0;
+	font-size: 12px;
+	color: #ffffff;
+	line-height: 16px;
+	text-align: right;
+}
+
+.footer-copyright p a {
+	font-size: 12px;
+	color: #ffffff;
+	line-height: 16px;
+	
 }
