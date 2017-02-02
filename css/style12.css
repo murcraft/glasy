@@ -1,54 +1,51 @@
+
 body {
-    background:#849d8f;
-    width: 1200px;
+	background:#849d8f url("../img/background-image1.jpg") no-repeat 50% 0;
+	width: 1200px;
     margin: 0 auto;
-    font-family: "Roboto", "Arial", sans-serif;
-    font-size: 16px;
-    color: #000000;
 
 }
 
 .container {
-    width: 1146px;
-    margin: 0 auto;
+	width: 1146px;
+	margin: 0 auto;
     padding: 0 27px;
-
 }
 
 .clearfix::after {
-    display: table;
-    content: "";
-    clear: both;
+	display: table;
+	content: "";
+	clear: both;
 }
 
 .main-header{
-    margin-bottom: 530px;
-
+	margin-bottom: 530px;
+	
 }
 
 .logo-header{
-    width: 154px;
-    float: left;
+	width: 154px;
+	float: left;
     margin-top: 10px;
 
 }
 
 .main-nav {
-    float: left;
-    min-width: 616px;
+	float: left;
+	min-width: 616px;
     margin-left: 23px;
     margin-top: 24px;
 
 }
 
 .main-menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 .main-menu > li {
-    display: inline-block;
+	display: inline-block;
     position: relative;
     font-size: 16px;
     color: #ffffff;
@@ -58,7 +55,7 @@ body {
 }
 
 .main-nav a {
-    display: block;
+	display: block;
     padding: 5px 14px;
     text-decoration-color: #ffffff;
     color: #ffffff;
@@ -71,13 +68,6 @@ body {
     border-radius: 16px;
 }
 
-.main-menu > .opened {
-    background: #d07058;
-    color: #ffffff;
-    border-radius: 16px;
-    text-decoration: none;
-}
-
 .main-nav .sub-menu {
     position: absolute;
     margin: 0;
@@ -88,6 +78,8 @@ body {
     left: -2px;
     color: #000000;
     padding-top: 6px;
+
+
 }
 
 .main-nav .sub-menu {
@@ -155,17 +147,9 @@ body {
     background: #f6b5a5;
 }
 
-.btn {
-    padding: 12px 20px;
-    color: #ffffff;
-    background: #e84d37;
-    border-radius: 40px;
-    text-decoration: none;
-}
-
 .user-block {
-    float: right;
-    margin-top: 24px;
+	float: right;
+	margin-top: 24px;
 }
 
 .user-block a {
@@ -184,52 +168,9 @@ body {
     font-size: 22px;
 
 }
-/* слайдер-фон*/
-.slaider {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    width: 1070px;
-    height: 898px;
-    margin-left: -535px;
-    z-index: -10;
-    background: url("../img/background-image1.jpg") no-repeat 50% 0;
-}
-
-.slaider h2 {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    width: 680px;
-    left: 50%;
-    bottom: 45%;
-    margin-left: -340px;
-    font-size: 60px;
-    line-height: 61px;
-    color: #ffffff;
-}
-
-.slaider a {
-    display: block;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    width: 280px;
-    left: 50%;
-    bottom: 35%;
-    margin-left: -140px;
-    font-size: 32px;
-    line-height: 63px;
-    color: #ffffff;
-    text-align: center;
-    font-weight: bold;
-
-}
-
-
 
 .offers {
-    margin-bottom: 35px;
+	margin-bottom: 35px;
     color: #ffffff;
     font-weight: bolder;
     font-size: 18px;
@@ -238,8 +179,8 @@ body {
 }
 /*офферы лучше переделать одним классом, чтобы было удобно размещать сразу все элементы и не дублировать на 2 */
 .offers-left {
-    float: left;
-    width: 530px;
+	float: left;
+	width: 530px;
     padding: 15px;
     margin-right: 26px;
     background: #fecbe0 url("../img/offers-image1.jpg") no-repeat;
@@ -262,170 +203,32 @@ body {
 }
 
 .hits {
-    margin-bottom: 40px;
+	margin-bottom: 40px;
 }
 
 .hits-item {
     margin: 0;
     padding: 0;
     font-size: 0;
-    list-style: none;
 }
 
 .hits-item li{
-    position: relative;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    width: 267px;
+	display: inline-block;
+	width: 267px;
     /*background: #cff6e1;*/
     margin-right: 26px;
     font-size: 16px;
     color: #ffffff;
     font-weight: 400;
-    padding-top: 255px;
-
 }
 
-
-
-.hits-item .btn-price {
-    display: block;
-    display: none;
-}
-
-.hits-item li:hover {
-    background: rgba(194, 206, 199, 0.3);
-    border-radius: 16px;
-}
-
-.hits-item li:hover .btn-price{
-    display: block;
-    color: #ffffff;
-    font-size: 15px;
-    line-height: 24px;
-    vertical-align: top;
-    text-align: center;
-    background: #e84d37;
-    border-radius: 20px;
-    text-decoration: none;
-}
-
-.hits-item li::before {
-    content: "";
-    top: 0;
-    left: 50%;
-    margin-left: -134px;
-    position: absolute;
-    display: block;
-    width: 267px;
-    height: 267px;
-    background: transparent no-repeat center;
-    border-radius: 134px;
-
-}
-
-hits-item. item-image {
-
-}
 .hits-item li:last-child {
     margin-right: 0;
-}
 
-.hits-item li:first-child::before {
-    margin-right: 0;
-    background: url("../img/hit-image1.jpg") no-repeat;
-    border-radius: 134px;
-}
-
-.hits-item li:nth-child(2):before {
-    margin-right: 0;
-    background: url("../img/hit-image2.jpg") no-repeat;
-    border-radius: 134px;
-}
-
-.hits-item li:nth-child(3)::before {
-    margin-right: 0;
-    background: url("../img/hit-image3.jpg") no-repeat;
-    border-radius: 134px;
-}
-
-.hits-item li:last-child::before {
-    margin-right: 0;
-    background: url("../img/hit-image4.jpg") no-repeat;
-    border-radius: 134px;
-}
-
-
-
-/*.price-item,
- .price-p {
- display: block;
- position: absolute;
- z-index: 10;
- top: 20px;
- left: 0;
- width: 175px;
- height: 34px;
- font-size:30px;
- line-height: 13px;
- }
-
- .price-p {
-
- }*/
-.hits-item .price {
-    position: relative;
-    top: -27px;
-    display: block;
-    color: #ffffff;
-    font-size: 45px;
-    font-weight: bold;
-    line-height:13px;
-    padding-right: 90px;
-    text-shadow: 1px 1px grey;
-    vertical-align: bottom;
-
-
-}
-
-.hits-item .price::after {
-    position: absolute;
-    content: " ";
-    width: 69px;
-    height: 45px;
-    left: 80px;
-    top: -18px;
-    font-size: 30px;
-    background: url("../img/spritesheet.png") no-repeat center;
-    background-position: -72px -12px;
-    vertical-align: bottom;
-
-}
-
-.hits-item .price span {
-    position: absolute;
-    left: 110px;
-    top: 5px;
-    font-size: 30px;
-
-}
-
-.hits-item p {
-    margin: 0;
-    padding: 0;
-    color: #ffffff;
-    font-size: 16px;
-    line-height: 22px;
-    text-align: center;
-}
-
-.hits-item p a {
-    color: #ffffff;
 }
 
 .features {
-    margin-bottom: 40px;
+	margin-bottom: 40px;
     background: #ffffff url("../img/background-features.jpg") repeat;
     border-radius: 15px;
     padding: 25px 18px;
@@ -434,47 +237,47 @@ hits-item. item-image {
 
 .features-item {
     position: relative;
-    float: left;
-    width: 486px; /*width: 483px; margin-right: 13px;*/
-    margin-top: 12px;
+	float: left;
+   	width: 486px; /*width: 483px; margin-right: 13px;*/
+	margin-top: 12px;
     font-size: 16px;
     line-height: 22px;
     color: #000000;
-    padding-left: 56px;
-    padding-top: 15px;
-    margin-right: 26px;
+	padding-left: 56px;
+	padding-top: 15px;
+	margin-right: 26px;
 }
 
 .features .icon2,
 .features .icon4 {
-    margin-right: 0;
+	margin-right: 0;
 }
 
 /*.features-item p {
     margin: 0;
-
+    
     margin-left: 56px;
     padding-top: 15px;
- }*/
+}*/
 
 .features-item::before {
     position: absolute;
-    display: block;
+	display: block;
     top: 0px;
     left: 0px;
     content: "";
     width: 49px;
     height: 49px;
     background: url("../img/spritesheet.png") left;
-    background-repeat: no-repeat;
-    background-position: -197px -110px;
-}
+	background-repeat: no-repeat;
+	background-position: -197px -110px;
+	}
 
 /* спрайты  */
 
 .icon1::before {
     background-position: -145px -20px;
-
+	
 }
 
 .icon2::before {
@@ -492,13 +295,13 @@ hits-item. item-image {
 
 
 .about {
-    margin-bottom: 35px;
+	margin-bottom: 35px;
 }
 
 .about-blog {
-    float: left;
+	float: left;
     margin-right: 26px;
-    width: 520px;
+	width: 520px;
     min-height: 174px;
     color: #5a5a5a;
     background: #ffffff url("../img/background-about.jpg") no-repeat 50%;
@@ -518,7 +321,7 @@ hits-item. item-image {
 }
 
 .distribution {
-    float: left;
+	float: left;
     width: 560px;
 
     background: #f8f7f4 url("../img/pattern.jpg") no-repeat;
@@ -543,7 +346,7 @@ hits-item. item-image {
 }
 
 .contacts-content {
-    position: relative;
+	position: relative;
     margin-bottom: 20px;
 }
 
@@ -574,65 +377,39 @@ hits-item. item-image {
     float: left;
     width: 267px;
     margin-right: 26px;
-    margin-top: 15px;
+	margin-top: 15px;
     margin-bottom: 25px;
-    text-align: center;
+	text-align: center;
 }
 
 .social-btn {
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-    margin: 0 12px;
-    background: #c2cec7 url("../img/spritesheet.png") no-repeat center;
-    font-size: 0;
-    vertical-align: top;
-    text-decoration: none;
-    border: 3px solid #c2cec7;
-    border-radius: 18px;
-
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	margin: 0 12px;
+	background: #c2cec7 url("../img/spritesheet.png") no-repeat center;
+	font-size: 0;
+	vertical-align: top;
+	text-decoration: none;
+	border: 3px solid #c2cec7;
+	border-radius: 18px;
+	
 }
 
 .social-btn-tw {
-    background-position: -235px -20px;
-}
-
-.social-btn-tw:hover {
-
-    background-position: -235px -20px;
-    opacity: 0.8;
-}
-
-.social-btn-tw:active {
-    background-position: -235px -20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5)
+	background-position: -235px -20px;
 }
 
 .social-btn-ins {
-    background-position: -213px -198px;
-}
-
-.social-btn-ins:hover {
-    background-position: -213px -198px;
-    opacity: 0.8;
+	background-position: -213px -198px;
 }
 
 .social-btn-fb {
-    background-position: -141px -198px;
-}
-
-.social-btn-fb:hover {
-    background-position: -141px -198px;
-    opacity: 0.8;
+	background-position: -141px -198px;
 }
 
 .social-btn-vk {
-    background-position: -284px -92px;
-}
-
-.social-btn-vk:hover {
-    background-position: -284px -92px;
-    opacity: 0.8;
+	background-position: -284px -92px;
 }
 
 .about-footer {
@@ -642,50 +419,50 @@ hits-item. item-image {
 }
 
 .about-footer ul {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 0;
-    margin-top: 16px;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+	margin-top: 16px;
 }
 
 .about-footer .footer-menu-left {
-    font-size: 13px;
-    margin-left: 107px;
-
+	font-size: 13px;
+	margin-left: 107px;
+	
 }
 
 .about-footer .footer-menu-right {
-    font-size: 13px;
-    width: 203px;
-
+	font-size: 13px;
+	width: 183px;
+	
 }
 
 .about-footer ul a {
-    display: block;
-    color: #ffffff;
-    font-size: 13px;
-    line-height: 18px;
-    padding-top: 3px;
-    padding-left: 22px;
+	display: block;
+	color: #ffffff;
+	font-size: 13px;
+	line-height: 18px;
+	padding-top: 3px;
+	padding-left: 22px;
 }
 
 
 
 .footer-menu-left li:first-child a {
-    position: relative;
+	position: relative;
 }
 
 .footer-menu-left li:first-child a::before {
-    content: "";
-    position: absolute;
+	content: "";
+	position: absolute;
     display: block;
-    top: 4px;
-    left: 0px;
-    width: 15px;
-    height: 15px;
-    background-color: #ffffff;
+	top: 4px;
+	left: 0px;
+	width: 15px;
+	height: 15px;
+	background-color: #ffffff;
     background: url("../img/spritesheet.png") center;
     background-repeat: no-repeat;
     background-position: -20px -18px;
@@ -698,29 +475,28 @@ hits-item. item-image {
 .footer-copyright {
     float: right;
     width: 267px;
-
+	
 
 }
 /* можно переделать под позицтонирование  */
 .footer-copyright > a {
-    display: block;
-    margin-bottom: 9px;
-    margin-left: 79px;
+	display: block;
+	margin-bottom: 9px;
+	margin-left: 79px;
 }
 
 .footer-copyright p {
-    margin:0;
-    padding: 0;
-    font-size: 12px;
-    color: #ffffff;
-    line-height: 16px;
-    text-align: right;
+	margin:0;
+	padding: 0;
+	font-size: 12px;
+	color: #ffffff;
+	line-height: 16px;
+	text-align: right;
 }
 
 .footer-copyright p a {
-    font-size: 12px;
-    color: #ffffff;
-    line-height: 16px;
+	font-size: 12px;
+	color: #ffffff;
+	line-height: 16px;
+	
 }
-
-
