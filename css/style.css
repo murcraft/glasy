@@ -12,7 +12,6 @@ body {
     width: 1146px;
     margin: 0 auto;
     padding: 0 27px;
-
 }
 
 .clearfix::after {
@@ -71,10 +70,21 @@ body {
     border-radius: 16px;
 }
 
+.main-menu > li > a:hover {
+    background: #f7f6f2;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 16px;
+}
+
 .main-menu > .opened {
     background: #d07058;
     color: #ffffff;
     border-radius: 16px;
+    text-decoration: none;
+}
+
+.main-menu > .opened a {
     text-decoration: none;
 }
 
@@ -158,9 +168,17 @@ body {
 .btn {
     padding: 12px 20px;
     color: #ffffff;
-    background: #e84d37;
+    background: linear-gradient(to top, #e74a35, #f26843);
     border-radius: 40px;
     text-decoration: none;
+    box-shadow: 0 2px 5px 0 rgba(172, 16, 0, 0.7);
+    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.7);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #f17d65;
+    text-shadow: none;
 }
 
 .user-block {
@@ -207,6 +225,7 @@ body {
     font-size: 60px;
     line-height: 61px;
     color: #ffffff;
+    z-index: 5;
 }
 
 .slaider a {
@@ -214,6 +233,7 @@ body {
     margin: 0;
     padding: 0;
     position: absolute;
+    z-index: 5;
     width: 280px;
     left: 50%;
     bottom: 35%;
@@ -223,12 +243,14 @@ body {
     color: #ffffff;
     text-align: center;
     font-weight: bold;
+}
+
+.slaider a:hover {
 
 }
 
-
-
 .offers {
+    position: relative;
     margin-bottom: 35px;
     color: #ffffff;
     font-weight: bolder;
@@ -238,19 +260,23 @@ body {
 }
 /*офферы лучше переделать одним классом, чтобы было удобно размещать сразу все элементы и не дублировать на 2 */
 .offers-left {
+    position: relative;
     float: left;
-    width: 530px;
-    padding: 15px;
+    width: 520px;
+    min-height: 191px;
+    padding: 20px;
     margin-right: 26px;
-    background: #fecbe0 url("../img/offers-image1.jpg") no-repeat;
+    background: #fecbe0 url("../img/offers-image1.jpg") no-repeat 50%;
     border-radius: 15px;
 }
 
 .offers-right {
+    position: relative;
     float: left;
-    width: 530px;
-    padding: 15px;
-    background: #3c241a url("../img/offers-image2.jpg") no-repeat;
+    width: 520px;
+    min-height: 191px;
+    padding: 20px;
+    background: #3c241a url("../img/offers-image2.jpg") no-repeat 50%;
     border-radius: 15px;
 }
 
@@ -259,10 +285,27 @@ body {
     padding: 0;
     font-size: 35px;
     text-align: left;
+    margin-bottom: 15px;
+}
+
+.offers-right p,
+.offers-left p {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 45px;
+}
+
+.offers .btn-offer {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
 }
 
 .hits {
-    margin-bottom: 40px;
+    /*margin-bottom: 40px;*/
 }
 
 .hits-item {
@@ -283,20 +326,40 @@ body {
     font-size: 16px;
     color: #ffffff;
     font-weight: 400;
-    padding-top: 255px;
+    padding-top: 265px;
+    padding-bottom: 58px;
 
 }
 
+.hits-item li p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
+.hits-item .hit-icon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 61px;
+    height: 61px;
+    z-ndex: 10;
+    background: url("../img/hit-icon.jpg") no-repeat 50%;
+    border-radius: 50%;
+
+}
 
 .hits-item .btn-price {
-    display: block;
     display: none;
 }
 
 .hits-item li:hover {
     background: rgba(194, 206, 199, 0.3);
     border-radius: 16px;
+    padding-bottom: 20px;
 }
 
 .hits-item li:hover .btn-price{
@@ -307,8 +370,9 @@ body {
     vertical-align: top;
     text-align: center;
     background: #e84d37;
-    border-radius: 20px;
+    border-radius: 40px;
     text-decoration: none;
+
 }
 
 .hits-item li::before {
@@ -325,7 +389,7 @@ body {
 
 }
 
-hits-item. item-image {
+.hits-item. .item-image {
 
 }
 .hits-item li:last-child {
@@ -460,8 +524,8 @@ hits-item. item-image {
 .features-item::before {
     position: absolute;
     display: block;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     content: "";
     width: 49px;
     height: 49px;
@@ -682,7 +746,7 @@ hits-item. item-image {
     position: absolute;
     display: block;
     top: 4px;
-    left: 0px;
+    left: 0;
     width: 15px;
     height: 15px;
     background-color: #ffffff;
