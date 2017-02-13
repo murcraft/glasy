@@ -11,12 +11,15 @@
 
 
 <!-- верхняя менюшка -->
-<header class="main-header">
-    <div class="container clearfix">
-        <div class="logo-header">
-            <img src="img/logo-menu.svg" alt="Logo" width="158" height="64">
-        </div>
-
+<input type="radio" id="btn-1" name="toggle" checked>
+<input type="radio" id="btn-2" name="toggle">
+<input type="radio" id="btn-3" name="toggle">
+<div class="site-wrapper">
+  <div class="content-wrapper">
+    <header class="main-header clearfix">
+      <div class="logo-header">
+        <img src="img/logo-menu.svg" alt="Logo" width="158" height="64">
+      </div>
         <nav class="main-nav">
             <ul class="main-menu">
                 <li><a href="#">Каталог</a>
@@ -36,52 +39,49 @@
         </nav>
 
         <div class="user-block">
-            <input  class="search" type="search" name="search">
+          <div class="search-field" >
+            <div class="search-icon">
+                <input type="text" placeholder="Что ищем?">
+            </div>
+            <input type="submit" value="">
+          </div>
             <a class="login" href="#">Вход</a>
             <a class="basket" href="#">Пусто</a>
-
-            <div class="contacts">
-                С 10 до 20, ежедневно<br>
-                <span class="contacts-phone">8 812 450-25-25</span>
-            </div>
-
         </div>
 
-        <!--<div class="breadcrumbs">
-          <a href="#">Главная</a>
-          <a href="#">Каталог</a>
-          <span class="page-breadcrumbs">Сливочное</span>
-        </div>-->
-        <!--выделяем отдельные блоки в этом классе-->
-
+       <div class="contacts">
+          С 10 до 20, ежедневно<br>
+          <span class="contacts-phone">8 812 450-25-25</span>
+       </div>
+    </header>
+<!--слайдер страницы -->
+    <div class="slider">
+      <div class="slide" id="slide1">
+        <div class="slide-title">Крем-брюле и пломбир
+            с малиновым джемом</div>
+        <a class="slide-btn" href="#">Давайте оба!</a>
+      </div>
+      <div class="slide" id="slide2">
+          <div class="slide-title">Шоколадный пломбир
+              и лимонный сорбет</div>
+          <a class="slide-btn" href="#">Давайте оба!</a>
+      </div>
+      <div class="slide" id="slide3">
+          <div class="slide-title">Пломбир с помадкой
+              и клубничный щербет</div>
+          <a class="slide-btn" href="#">Давайте оба!</a>
+      </div>
+      <div class="slider-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
+      </div>
     </div>
 
-</header>
-<!--конец верхней менюшки -->
-<div class="slaider">
-    <h2>Крем-брюле и пломбир с малиновым джемом</h2>
-    <a href="#" class="btn">Давайте оба!</a>
-</div>
+
 <!--вся страница для обозначения общего стиля -->
-<main class="container">
 
-    <!--<div class="main-slider">
-        <ul class="slider-bar">
-          <li><img src="img/background-ic.png" alt="slider1" width="" height="">
-     -->
-    <!--    </li>
-        <li><img src="img/slider2.jpg" alt="slider2" width="" height="">
-          <h2>Шоколадный пломбир и лимонный сорбет</h2>
-          <a href="#" class="btn">Давайте оба!</a>
-        </li>
-        <li><img src="img/slider3.jpg" alt="slider3" width="" height="">
-          <h2>Пломбир с помадкой и клубничный щербет</h2>
-          <a href="#" class="btn">Давайте оба!</a>
-        </li>
-      </ul>
-    </div>
-    -->
-    <!--Предложения товаров -->
+
     <div class="offers clearfix">
         <div class="offers-left">
             <h3>Малинка даром!</h3>
@@ -188,30 +188,30 @@
             </div>
         </div>
     </div>
-</main>
+      </div>
+
 
 <div class="contacts-content">
     <img src="img/map-image.jpg">
 
     <div class="contacts-form">
-        Адрес главного офиса и офлайн магазина:<br>
-        <p>ул.Большая Конюшенная 19/8, Санкт-Петербург</p>
-        <br>
+        <p>Адрес главного офиса и офлайн магазина:<br>
+            <span class="contacts-bold">ул.Большая Конюшенная 19/8, Санкт-Петербург</span>
+        </p><br>
 
-        Для заказов по телефону:<br>
-        <p>8 812 450-25-25</p>
-        (с 10 до 20 ежедневно)<br>
-
-        <a href="#" class="btn">Форма обратной связи</a>
+        <p>Для заказов по телефону:<br>
+            <span class="contacts-bold">8 812 450-25-25</span><br>
+            (с 10 до 20 ежедневно)<br>
+        </p>
+        <a  class="btn" href="#">Форма обратной связи</a>
     </div>
 
 </div>
 
 
-
-<footer class="main-footer">
-    <div class="container clearfix">
-        <section class="social-footer">
+<div class="content-wrapper">
+  <footer class="main-footer clearfix">
+         <section class="social-footer">
             <a class="social-btn social-btn-tw" href="#">Твиттер</a>
             <a class="social-btn social-btn-ins" href="#">Инстаграмм</a>
             <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
@@ -236,12 +236,12 @@
             <a href="http://htmlacademy.ru"><img src="img/footer-logo.png" alt="htmlacademy.ru" width="" height=""></a>
             <p>Сделано в <a href="#">HTML Academy</a> &#169 2016</p>
         </section>
-    </div>
 
+  </footer>
 
-</footer>
+</div>
 
-
+ </div>
 
 </body>
 </html>

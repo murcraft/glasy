@@ -1,12 +1,14 @@
 body {
     background:#849d8f;
+    width: 1200px;
     margin: 0 auto;
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     color: #000000;
+
 }
 
-.content-wrapper {
+.container {
     width: 1146px;
     margin: 0 auto;
     padding: 0 27px;
@@ -19,7 +21,8 @@ body {
 }
 
 .main-header{
-    position: relative;
+    margin-bottom: 530px;
+
 }
 
 .logo-header{
@@ -34,6 +37,7 @@ body {
     min-width: 616px;
     margin-left: 23px;
     margin-top: 24px;
+
 }
 
 .main-menu {
@@ -57,6 +61,13 @@ body {
     padding: 5px 14px;
     text-decoration-color: #ffffff;
     color: #ffffff;
+}
+
+.main-menu > li > a:hover {
+    background: #f7f6f2;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 16px;
 }
 
 .main-menu > li > a:hover {
@@ -95,7 +106,6 @@ body {
 
 .main-menu > li:hover .sub-menu {
     display: block;
-
 }
 
 .main-nav .sub-menu li:first-child {
@@ -137,7 +147,6 @@ body {
     color: #000000;
     text-decoration: none;
     border-radius: 0;
-    
 }
 
 .main-nav .sub-menu li:first-child:hover {
@@ -162,7 +171,7 @@ body {
     background: linear-gradient(to top, #e74a35, #f26843);
     border-radius: 40px;
     text-decoration: none;
-    box-shadow: 0 2px 5px 0 rgba(172, 16, 0, 0.7);
+    box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.7);
     text-shadow: 0 2px 5px rgba(160, 32, 11, 0.7);
     cursor: pointer;
 }
@@ -172,260 +181,127 @@ body {
     text-shadow: none;
 }
 
-.btn:active {
-    background: linear-gradient(to top, #f26843, #e74a35);
-    box-shadow: inset 0 2px 2px 0 rgba(172, 16, 0, 0.7);
+.btn:hover:active {
+	background: linear-gradient(to top, #f26843, #e74a35);
+	box-shadow: inset 0 2px 2px 0 rgba(172, 16, 0, 0.7);
 }
 
 .user-block {
     float: right;
     margin-top: 24px;
-    display: inline-block;
-    vertical-align: top;
-    font-size: 0;
-    position: relative;
 }
 
 
-.search-field {
-    display: inline-block;
+/* поле поиска */
 
-    font-size: 0;
+
+* {box-sizing: border-box;}
+.user-block form {
+  position: absolute;
+  width: 300px;
+  margin: 0 auto;
+  height: 42px;
+}
+.user-block input {
+  height: 42px;
+  width: 0;
+  padding: 0 42px 0 15px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  background: transparent;
+  transition: .4s cubic-bezier(0, 0.8, 0, 1);
+  position: absolute;
+  bottom: -35px;
+  right: -37px;
+  z-index: 2;
+}
+.user-block input:focus {
+  width: 342px;
+  z-index: 1;
+  border: 2px solid #F9F0DA;
+}
+.user-block button {
+  background: #ffffff url("../img/search-black.png") no-repeat 50%;
+  border: none;
+  border-radius: 50%;
+  height: 33px;
+  width: 33px;
+  position: relative;
+  
+  cursor: pointer;
+}
+.user-block button::before {
+  content: "";
+  display: block;
+  font-size: 16px;
+  background: url("../img/spritesheet.png") no-repeat 50%;
+  background-position: -310px -170px;
 }
 
-.search-field input[type=text] {
-    position: absolute;
-
-    top: 36px;
-    right: 205px;
-    width: 343px;
-    height: 70px;
-    border-radius: 4px;
-    display: none;
-}
-
-.search-field .search-icon {
-    
-}
-
-.search-field input[type=submit] {
-    position: relative;
-    width: 33px;
-    height: 33px;
-    outline: none;
-    border: 0;
-    background: url("../img/spritesheet.png") no-repeat center;
-    background-position: -277px -154px;
-    border-radius: 50%;
-    vertical-align: top;
-}
-
-.search-field input[type=submit]:hover {
+/*  конец поля поиска */
+.user-block a {
 
 }
 
-.search-field input[type=submit]:focus input[type=text] {
-    display: inline-block;
-
-}
-
-
-.user-block .login,
-.user-block .basket {
-    display: inline-block;
-    margin-left: 10px;
-    padding: 7px 15px;
-    padding-left: 44px;
-    color: #ffffff;
-    font-size: 14px;
-    line-height: 18px;
-    vertical-align: top;
-    text-align: center;
-    text-decoration: none;
-    font-weight: 400;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 18px;
-}
-
-.user-block .login::before {
-    position: absolute;
-    content: "";
-    width: 21px;
-    height: 19px;
-    left: 58px;
-    top: 6px;
-    background: url("../img/spritesheet.png") no-repeat center;
-    background-position: -80px -198px;
-}
-
-.user-block .basket::before {
-    position: absolute;
-    content: "";
-    width: 21px;
-    height: 19px;
-    right: 60px;
-    top: 6px;
-    background: url("../img/spritesheet.png") no-repeat center;
-    background-position: -20px -198px;
-}
-
-.main-header .contacts {
-    position: absolute;
+.user-block .contacts {
+    margin-top: 15px;
     font-size: 14px;
     line-height: 20px;
     color: #ffffff;
     text-align: right;
-    font-weight: 700;
-    right: 0;
-    bottom: -40px;
 }
 
-.main-header .contacts-phone {
+.user-block .contacts-phone {
     font-size: 22px;
 
 }
-/** слайдер стиль **/
-
-body > input[type="radio"] {
-    display: none;
+/* слайдер-фон*/
+.slaider {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 1070px;
+    height: 898px;
+    margin-left: -535px;
+    z-index: -10;
+    background: url("../img/background-image1.jpg") no-repeat 50% 0;
 }
 
-
-.site-wrapper {
-    min-width: 1200px;
-    background: #849d8f url("../img/slide1.jpg") no-repeat top center;
-
-    transition: background-image 0.5s ease,
-        background-color 0.5s ease;
+.slaider h2 {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 680px;
+    left: 50%;
+    bottom: 45%;
+    margin-left: -340px;
+    font-size: 60px;
+    line-height: 61px;
+    color: #ffffff;
+    z-index: 5;
 }
 
-.site-wrapper::before,
-.site-wrapper::after {
-    content: "";
-
-    visibility: hidden;
-}
-
-.site-wrapper::before,
-.site-wrapper::after {
-    background-image: url("../img/slide2.jpg");
-}
-
-.site-wrapper::before,
-.site-wrapper::after {
-    background-image: url("../img/slide3.jpg");
-}
-
-.slider {
-    position: relative;
-
-    padding-top: 272px;
-
+.slaider a {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 5;
+    width: 280px;
+    left: 50%;
+    bottom: 35%;
+    margin-left: -140px;
+    font-size: 32px;
+    line-height: 63px;
     color: #ffffff;
     text-align: center;
+    font-weight: bold;
 }
 
-.slide {
-    display: none;
+.slaider a:hover {
+
 }
-
-.slide-title {
-    width: 710px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-
-    font-weight: 800;
-    font-size: 60px;
-}
-
-.slide-btn {
-    display: inline-block;
-    padding: 12px 50px;
-    margin-bottom: 40px;
-
-    font-weight: 600;
-    font-size: 31px;
-    line-height: 41px;
-    vertical-align: top;
-    color: #ffffff;
-    text-decoration: none;
-    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-
-    background: #f26843;
-    background: -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
-    background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
-    background: -moz-linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
-    border-radius: 100px;
-    box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-}
-
-.slide-btn:hover {
-    background: -moz-linear-gradient(top, #f58666 0%, #ec6f5e 100%);
-    background: -webkit-linear-gradient(top, #f58666 0%, #ec6f5e 100%);
-    background: -moz-linear-gradient(to bottom, #f58666 0%, #ec6f5e 100%);
-    box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
-}
-
-.slide-btn:active {
-    background: -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
-    background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
-    background: -moz-linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
-    box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
-}
-
-.slider-controls {
-    position: absolute;
-    bottom: 25px;
-    left: 0;
-    z-index: 20;
-
-    font-size: 0;
-}
-
-.slider-controls label {
-    display: inline-block;
-    width: 21px;
-    height: 21px;
-    margin-right: 20px;
-
-    vertical-align: top;
-
-    background-color: transparent;
-    border: 2px solid #ffffff;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-#btn-1:checked ~ .site-wrapper #slide1,
-#btn-2:checked ~ .site-wrapper #slide2,
-#btn-3:checked ~ .site-wrapper #slide3 {
-    display: block;
-}
-
-#btn-1:checked ~ .site-wrapper {
-    background-color: #849d8f;
-    background-image: url("../img/slide1.jpg");
-}
-
-
-
-#btn-2:checked ~ .site-wrapper {
-    background-color: #8996a6;
-    background-image: url("../img/slide2.jpg");
-}
-
-#btn-3:checked ~ .site-wrapper {
-    background-color: #9d8b84;
-    background-image: url("../img/slide3.jpg");
-}
-
-#btn-1:checked ~ .site-wrapper label[for="btn-1"],
-#btn-2:checked ~ .site-wrapper label[for="btn-2"],
-#btn-3:checked ~ .site-wrapper label[for="btn-3"] {
-    background-color: #ffffff;
-}
-
-/** конец слайдер стиль **/
 
 .offers {
     position: relative;
@@ -434,8 +310,9 @@ body > input[type="radio"] {
     font-weight: bolder;
     font-size: 18px;
     line-height: 24px;
-}
 
+}
+/*офферы лучше переделать одним классом, чтобы было удобно размещать сразу все элементы и не дублировать на 2 */
 .offers-left {
     position: relative;
     float: left;
@@ -490,19 +367,20 @@ body > input[type="radio"] {
     padding: 0;
     font-size: 0;
     list-style: none;
-   }
+}
 
 .hits-item li{
     position: relative;
     display: inline-block;
     margin: 0;
     padding: 0;
-    width: 267px;
+    width: 247px;
     /*background: #cff6e1;*/
     margin-right: 26px;
     font-size: 16px;
     color: #ffffff;
     font-weight: 400;
+	padding: 10px;
     padding-top: 265px;
     padding-bottom: 58px;
 
@@ -598,6 +476,23 @@ body > input[type="radio"] {
 }
 
 
+
+/*.price-item,
+ .price-p {
+ display: block;
+ position: absolute;
+ z-index: 10;
+ top: 20px;
+ left: 0;
+ width: 175px;
+ height: 34px;
+ font-size:30px;
+ line-height: 13px;
+ }
+
+ .price-p {
+
+ }*/
 .hits-item .price {
     position: relative;
     top: -27px;
@@ -674,6 +569,12 @@ body > input[type="radio"] {
     margin-right: 0;
 }
 
+/*.features-item p {
+    margin: 0;
+
+    margin-left: 56px;
+    padding-top: 15px;
+ }*/
 
 .features-item::before {
     position: absolute;
@@ -688,7 +589,7 @@ body > input[type="radio"] {
     background-position: -197px -110px;
 }
 
-
+/* спрайты  */
 
 .icon1::before {
     background-position: -145px -20px;
@@ -707,8 +608,6 @@ body > input[type="radio"] {
     background-position: -197px -110px;
 }
 
-
-
 .about {
     margin-bottom: 35px;
 }
@@ -721,7 +620,9 @@ body > input[type="radio"] {
     color: #5a5a5a;
     background: #ffffff url("../img/background-about.jpg") no-repeat 50%;
     border-radius: 15px;
-    padding: 25px 20px
+    padding: 25px 20px;
+	font-size: 16px;
+	font-weight: 400;
 
 }
 
@@ -738,7 +639,6 @@ body > input[type="radio"] {
 .distribution {
     float: left;
     width: 560px;
-
     background: #f8f7f4 url("../img/pattern.jpg") no-repeat;
     border-radius: 15px;
 }
@@ -760,41 +660,6 @@ body > input[type="radio"] {
     margin-bottom: 37px;
 }
 
-
-.distribution-form {
-
-    padding: 0;
-    font-size: 0;
-    vertical-align: middle;
-}
-
-.distribution-form input[type="text"] {
-    display: inline-block;
-    min-height: 41px;
-    width: 69%;
-    outline: none;
-    border: 1px solid rgba(178, 178, 178, 0.5);
-    border-radius: 3px;
-    text-align: left;
-    font-size: 16px;
-    line-height: 24px;
-    box-shadow: none;
-    padding-left: 10px;
-    margin-right: 10px;
-
-}
-
-.distribution-form input[type=submit] {
-    display: inline-block;
-    outline: none;
-    border: 0;
-    padding: 10px 20px;
-    font-size: 17px;
-    line-height: 24px;
-    font-weight: 700;
-}
-
-
 .contacts-content {
     position: relative;
     margin-bottom: 20px;
@@ -811,10 +676,10 @@ body > input[type="radio"] {
 }
 
 .contacts-form p {
-    padding: 0;
+	padding: 0;
     margin: 0;
     font-weight: 400;
-    font-size: 14px;
+	font-size: 14px;
     line-height: 20px;
     color: #343434;
 }
@@ -827,87 +692,113 @@ body > input[type="radio"] {
 }
 
 .contacts-form .btn {
-    display: inline-block;
-    width: 85%;
-    margin: 25px auto;
-    font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 0;
-    text-align: center;
+	display: inline-block;
+	width: 85%;
+	margin: 25px auto;
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 0;
 }
 
 /* форма обратной связи в body */
 .form-feedback {
-    display: none;
+	display: none;
 }
 
 .form-feedback {
-    position: absolute;
-    left: 50%;
-    top: 38%;
-    z-index: 20;
-    margin-left: -213px;
-    width: 426px;
-    min-height: 185px;
-    background: #f8f7f4;
-    border-radius: 9px;
-    padding: 20px 25px;
-    padding-bottom: 95px;
-    font-size: 0;
+	position: absolute;
+	left: 50%;
+	top: 38%;
+	z-index: 20;
+	margin-left: -213px;
+	width: 426px;
+	min-height: 185px;
+	background: #f8f7f4;
+	border-radius: 9px;
+	padding: 20px 25px;
+	padding-bottom: 95px;
+	font-size: 0;
 }
 
 .form-feedback form {
-    font-size: 0;
+	font-size: 0;
 }
 
 .form-feedback h3 {
-    margin: 0;
-    margin-bottom: 20px;
-    font-size: 24px;
-    font-weight: 500;
-    color: #343434;
-    line-height: 26px;
-    text-align: left;
-
+	margin: 0;
+	margin-bottom: 20px;
+	font-size: 24px;
+	font-weight: 500;
+	color: #343434;
+	line-height: 26px;
+	text-align: left;
+	
 }
 
 .form-feedback textarea {
-    width: 96%;
-    margin: 0 auto;
-    text-align: left;
+	width: 96%;
+	margin: 0 auto;
+	text-align: left;
 }
 
 .form-feedback .input-field,
 .form-feedback textarea {
-    display: inline-block;
-    vertical-align: middle;
-    text-align: left;
-    font-size: 16px;
-    line-height: 24px;
-    color: #656565;
-    margin-bottom: 20px;
-    border-radius: 6px;
-    border-color: 1 px solid #f8f7f4;
-    padding-left: 15px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+	font-size: 16px;
+	line-height: 24px;
+	color: #656565;
+	margin-bottom: 20px;
+	border-radius: 6px;
+	border-color: 1 px solid #f8f7f4;
+	padding-left: 15px;
 }
 
 .form-feedback .btn {
-    position: absolute;
-    bottom: 20px;
+	position: absolute;
+	bottom: 20px;
     right: 25px;
-    border: none;
-    font-size: 16px;
-    font-weight: 700;
-    text-align: center;
-
-
-
+	border: none;
+	font-size: 16px;
+	font-weight: 700;
+	
+	
+	
 }
 
 /* конец формы связи, не видна в главном меню*/
 
 
-/*********** */
+.distribution-form input {
+	display: inline-block;
+	padding: 0;
+	vertical-align: middle;
+}
+
+.distribution-form .email-field {
+	
+	min-height: 41px;
+	width: 67%;
+	border: 1px solid (178, 178, 178, 0.5);
+	border-radius: 3px;
+	text-align: left;
+	font-size: 16px;
+	line-height: 24px;
+	box-shadow: none;
+	padding-left: 10px;
+	margin-right: 10px;
+}
+
+.distribution-form .btn-submit {
+	
+	padding: 10px 20px;
+	border: none;
+	font-size: 17px;
+	line-height: 24px;
+	font-weight: 700;
+}
+
 .social-footer {
     float: left;
     width: 267px;
