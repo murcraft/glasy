@@ -52,20 +52,34 @@
 
     <!--вся страница для обозначения общего стиля -->
     <main class="catalog-content clearfix">
+    <div class="breadcrumbs">
+    <ul>
+	  <li>
+		  <a href="#">Главная</a>
+	  </li>
+	  <li>
+		  <a href="#">Каталог</a>
+	  </li>
+	  <li>
+		  <span>Сливочное</span>
+	  </li>
+    </ul>
+	</div>
 
-	  <h1 class="name-page">Сливочное мороженое</h1>
+	  <h1>Сливочное мороженое</h1>
 	   <form class="catalog-form">
   		<div class="filters">
 
 		  <div class="select-sorting">
-		    <label>Сортировка:
+		    <label>Сортировка:<br>
 		      <select name="sort">
 		       <option value="popular"> По популярности</option>
 		      </select>
 		    </label>
 		  </div>
 		  <div class="select-price">
-		   Цена: 100 руб. - 500 руб.
+		   <span>Цена:</span>
+			  100 руб. - 500 руб.
 		  </div>
 		  <div class="select-fat">
 		    <label>Жирность
@@ -96,7 +110,7 @@
 					  <div class="goods-hover">
 						  <div class="goods-image">
 							  <img src="img/shop-goods1.jpg" alt="goods1" width="267" height="267">
-							<div class="catalog-icon"></div>
+
 						  </div>
 
 						  <div class="price">310<span>/кг</span>
@@ -111,7 +125,7 @@
 						  <div class="goods-image">
 							  <img src="img/shop-goods2.jpg" alt="goods1" width="267" height="267">
 						  </div>
-						  <div class="catalog-icon"></div>
+
 						  <div class="price">380<span>/кг</span>
 						  </div>
 
@@ -124,7 +138,7 @@
 						  <div class="goods-image">
 							  <img src="img/shop-goods3.jpg" alt="goods1" width="267" height="267">
 						  </div>
-						  <div class="catalog-icon"></div>
+
 						  <div class="price">355<span>/кг</span>
 						  </div>
 
@@ -138,7 +152,7 @@
 						  <div class="goods-image">
 							  <img src="img/shop-goods4.jpg" alt="goods1" width="267" height="267">
 						  </div>
-						  <div class="catalog-icon"></div>
+
 						  <div class="price">415<span>/кг</span>
 						  </div>
 
@@ -152,7 +166,7 @@
 						  <div class="goods-image">
 							  <img src="img/shop-goods5.jpg" alt="goods1" width="267" height="267">
 						  </div>
-						  <div class="catalog-icon"></div>
+
 						  <div class="price">325<span>/кг</span>
 						  </div>
 
@@ -166,7 +180,7 @@
 						  <div class="goods-image">
 							  <img src="img/shop-goods6.jpg" alt="goods1" width="267" height="267">
 						  </div>
-						  <div class="catalog-icon"></div>
+
 						  <div class="price">410<span>/кг</span>
 						  </div>
 
@@ -180,7 +194,7 @@
 						  <div class="goods-image">
 							  <img src="img/shop-goods7.jpg" alt="goods1" width="267" height="267">
 						  </div>
-						  <div class="catalog-icon"></div>
+
 						  <div class="price">375<span>/кг</span>
 						  </div>
 
@@ -194,7 +208,7 @@
 						  <div class="goods-image">
 							  <img src="img/shop-goods8.jpg" alt="goods1" width="267" height="267">
 						  </div>
-						  <div class="catalog-icon"></div>
+
 						  <div class="price">320<span>/кг</span>
 						  </div>
 
@@ -208,7 +222,7 @@
 						  <div class="goods-image">
 							  <img src="img/shop-goods9.jpg" alt="goods1" width="267" height="267">
 						  </div>
-						  <div class="catalog-icon"></div>
+
 						  <div class="price">440<span>/кг</span>
 						  </div>
 
@@ -222,7 +236,7 @@
 						  <div class="goods-image">
 							  <img src="img/shop-goods10.jpg" alt="goods1" width="267" height="267">
 						  </div>
-						  <div class="catalog-icon"></div>
+
 						  <div class="price">435<span>/кг</span>
 						  </div>
 
@@ -236,7 +250,7 @@
 						  <div class="goods-image">
 							  <img src="img/shop-goods11.jpg" alt="goods1" width="267" height="267">
 						  </div>
-						  <div class="catalog-icon"></div>
+
 						  <div class="price">355<span>/кг</span>
 						  </div>
 
@@ -250,7 +264,7 @@
 						  <div class="goods-image">
 							  <img src="img/shop-goods12.jpg" alt="goods1" width="267" height="267">
 						  </div>
-						  <div class="catalog-icon"></div>
+
 						  <div class="price">420<span>/кг</span>
 						  </div>
 
@@ -264,20 +278,18 @@
 
 
 
-		  <div class="page-field clearfix">
-		    <a class="first-page" href="#"></a>
-			<a class="active-page shop-page" href="#">1</a>
-			<a class="shop-page" href="#">2</a>
-			<a class="shop-page" href="#">3</a>
-			<a class="shop-page" href="#">4</a>
-			<a class="shop-page" href="#">5</a>
-			<a class="last-page" href="#"></a>
-		  </div>
+		<div class="paginator">
+			<a class="prev disabled" href="#prev">Назад</a>
+			<a class="current shop-page" href="#1">1</a>
+			<a class="shop-page" href="#2">2</a>
+			<a class="shop-page" href="#3">3</a>
+			<a class="shop-page" href="#4">4</a>
+			<a class="shop-page" href="#5">5</a>
+			<a class="next" href="#next">Вперед</a>
+		</div>
+	</main>
 
 
-
-
-    </main>
 
 			<footer class="main-footer clearfix">
 				<section class="social-footer">
@@ -308,7 +320,7 @@
 
 			</footer>
 
-</div>
+    </div>
 
 	</body>
   </html>
