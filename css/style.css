@@ -1109,6 +1109,121 @@ body > input[type="radio"] {
     font-weight: 700;
 }
 
+.catalog-form {
+
+
+
+}
+.filtres {
+    display: inline-block;
+    margin-right: 15px;
+
+    font-size: 0;
+    vertical-align: top;
+    text-align: left;
+}
+
+.catalog-form label,
+.select-fat > span,
+.select-consist > span {
+    font-size: 14px;
+    color: #ffffff;
+    text-align: left;
+}
+
+
+.select-sorting select {
+    display: inline-block;
+
+    background: rgba(169, 185, 175, 0.8);
+    padding: 7px 15px;
+    padding-right: 40px;
+
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    text-transform: lowercase;
+
+    border-radius: 20px;
+    border: none;
+}
+
+.select-price {
+    display: inline-block;
+    width: 220px;
+
+    background: rgba(169, 185, 175, 0.8);
+
+}
+
+.select-fat {
+    display: inline-block;
+    font-size: 0;
+}
+
+
+.fat-input {
+    background: rgba(169, 185, 175, 0.8);
+    padding: 7px 15px;
+
+
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    text-transform: lowercase;
+
+    border-radius: 20px;
+    border: none;
+}
+
+.select-consist {
+    display: inline-block;
+    font-size: 0;
+}
+
+.consist {
+    background: rgba(169, 185, 175, 0.8);
+    padding: 7px 15px;
+
+
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    text-transform: lowercase;
+
+    border-radius: 20px;
+    border: none;
+}
+
+.catalog-form input[type="submit"] {
+    vertical-align: bottom;
+    display: inline-block;
+    outline: none;
+    border: 2px solid #ffffff;
+
+    padding: 6px 15px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    background: rgba(169, 185, 175, 0.8);
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .paginator {
     float: right;

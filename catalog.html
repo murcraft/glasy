@@ -68,39 +68,59 @@
 
 	  <h1>Сливочное мороженое</h1>
 	   <form class="catalog-form">
-  		<div class="filters">
 
-		  <div class="select-sorting">
+
+		  <div class="filtres select-sorting">
 		    <label>Сортировка:<br>
 		      <select name="sort">
-		       <option value="popular"> По популярности</option>
+		       <option value="popular">По популярности</option>
+			   <option value="chip">сначала недорогие</option>
+			   <option value="expensive">сначала дорогие</option>
+			   <option value="fofit">по жирности</option>
 		      </select>
 		    </label>
 		  </div>
-		  <div class="select-price">
-		   <span>Цена:</span>
-			  100 руб. - 500 руб.
+		  <div class="filtres">
+		   <label>Цена:</label>
+			  <span>100 руб. - 500 руб.</span>
+			  <div class="select-price"></div>
 		  </div>
+
 		  <div class="select-fat">
-		    <label>Жирность
-		      <input type="radio" name="fat" value="0">0%
-			  <input type="radio" name="fat" value="10" checked>до 10%
-			  <input type="radio" name="fat" value="30">до 30%
-			  <input type="radio" name="fat" value="30">выше 30%
-			</label>
+		    <span>Жирность:</span>
+			<div class="fat-input">
+				<label>
+		      <input type="radio" name="fat" value="0">
+						0%</label>
+					<label>
+			  <input type="radio" name="fat" value="10" checked>до 10%</label>
+						<label>
+			  <input type="radio" name="fat" value="30">до 30%</label>
+							<label>
+			  <input type="radio" name="fat" value="30">выше 30%</label>
+
+
+		   </div>
 		  </div>
-		  <div class="select-consist">
-		    <label>Наполнители:
-		      <input type="checkbox" name="consist">шоколадные
-			  <input type="checkbox" name="consist">сахарные присыпки
-			  <input type="checkbox" name="consist">фрукты
-			  <input type="checkbox" name="consist">сиропы
-			  <input type="checkbox" name="consist">джемы
-			</label>
-		  </div>
-		  <input type="submit" class="btn" value="Применить">
+		  <div class="filtres select-consist">
+		    <span>Наполнители:</span>
+			  <div class="consist">
+		      <label>
+				  <input type="checkbox" name="consist">шоколадные</label>
+			  <label>
+			  <input type="checkbox" name="consist">сахарные присыпки</label>
+			  <label>
+			  <input type="checkbox" name="consist">фрукты</label>
+			  <label>
+			  <input type="checkbox" name="consist">сиропы</label>
+			  <label>
+			  <input type="checkbox" name="consist">джемы</label>
+				  </div>
 
 		  </div>
+		  <input type="submit" class="btn-form" value="Применить">
+
+
 	    </form>
 
 
